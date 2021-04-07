@@ -1,8 +1,10 @@
-var hamburger = $('.hamburger-menu');
-var closeX = $('ul li');
+var hamburger = $('.header-right a');
+var menu = $('.hamburger-menu');
+var closeX = $('.close');
 
-hamburger.mouseenter( function(){
-    closeX.fadeIn();
-}),mouseleave( function(){
-    closeX.fadeOut();
-})
+hamburger.click( function(){
+    menu.fadeIn();
+});
+closeX.click( function(){
+    menu.fadeOut();
+});
